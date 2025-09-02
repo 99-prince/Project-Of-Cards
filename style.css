@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    /* THIS IS NOT USING BEACUSE I WANT SET THE CARDS 1 BY 1 UP.*/
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 230px;
+    border: 1px solid salmon;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+#card1{
+    background-color: salmon;
+    z-index: 4;
+}
+
+#card2{
+    z-index: 3;
+    transform: translate(-50%,-50%) rotate(-6deg);
+    background-color: aqua;
+}
+
+#card3{
+    z-index: 2;
+    transform: translate(-50%,-50%) rotate(-12deg);
+    background-color: lime;
+}
+
+#card4{
+    z-index: 1;
+    transform: translate(-50%,-50%) rotate(-18deg);
+    background-color: violet;
+}
+
+
+#card2:hover{
+    z-index: 5;
+}
+
+#card3:hover{
+    z-index: 6;
+}
+
+#card4:hover{
+    z-index: 7;
+}
+
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
